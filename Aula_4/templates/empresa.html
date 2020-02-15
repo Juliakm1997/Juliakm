@@ -7,17 +7,20 @@
     <title>{{titulo}}</title>
 </head>
 <body>
-    <h1>empresas</h1>
+    <h1>Empresas</h1>
+    <a href="/cadastro-empresa">Cadastrar Nova</a>
     <table>
         <thead>
             <tr>
                 <th>Nome</th>
+                <th>Email</th>
             </tr>
         </thead>
         <tbody>
             {% for e in empresas %}
                 <tr>
-                    <td>{{e}}</td>
+                    <td>{{e.nome}}</td>
+                    <td>{{e.email}}</td>
                 </tr>
             {% endfor %} 
         </tbody>  
